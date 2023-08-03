@@ -48,3 +48,12 @@ int main()
     x++;
     j++;
    }}}}
+
+================================================================
+output:
+Output:
+enter the stringa+b
+symbol  value   address  token
+a       10       6487456          identifier
++                6487457          operator
+b       5        6487458         identifier
