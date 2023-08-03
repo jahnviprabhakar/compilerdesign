@@ -137,3 +137,11 @@ if(strcmp(stack,"$E$")==0)
 else
     printf("\nNot Accepted;");
 }
+
+==================================================================
+output:
+utput:
+Value of (a + b) * c / d is : 103
+Value of ((a + b) * c) / d is  : 103
+Value of (a + b) * (c / d) is  : 74
+Value of a + (b * c) / d is  : 67
