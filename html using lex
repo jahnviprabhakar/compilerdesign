@@ -17,3 +17,14 @@ int main() {
     yylex();
     return 0;
 }
+
+==================================================
+output:
+<html>
+<head>
+<lhead>
+<body>
+<h1>My heading</h1>
+<p>My paragraph.</p>
+</body>
+</html>
