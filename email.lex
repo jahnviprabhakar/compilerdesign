@@ -12,3 +12,12 @@ yylex();
 printf("\n");
 return 0;
 }
+
+===========================================================
+output:
+enter email: jahnavi898@gmail.com
+valid email
+===========================================================
+output:
+enter email: jahnavi.gmail.com
+invalid email
