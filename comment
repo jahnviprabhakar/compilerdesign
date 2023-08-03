@@ -11,3 +11,12 @@ int main()
 		printf("\nnot a comment line");
 	}
 }
+
+=====================================================================
+output:
+enter://write it//
+comment line
+======================================================================
+output:
+enter:///write it/"
+not a comment line
