@@ -1,15 +1,21 @@
 %{
-#include<stdio.h>
+    #include <stdio.h>
+    int count = 0;
 %}
 
 %%
-[A-Z] { printf("%c\n", yytext[0]); }
-.|\n ;
+
+[A-Z]    { count++; }
+.|\n     {  }
+
 %%
 
 int main() {
-    yyin = fopen("input.txt", "r");
     yylex();
-    fclose(yyin);
+    printf("Number of capital letters: %d\n", count);
     return 0;
+}
+
+int yywrap() {
+    return 1;
 }
