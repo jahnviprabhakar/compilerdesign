@@ -14,3 +14,27 @@ yylex();
 printf("header files:%d,""macro:%d",x,m);
 return 0;
 }
+
+==============================================================
+output:
+
+enter : #include<stdio.h>
+#include<is a header file
+<stdio.h>
+#include<math.h>
+
+#include is a header file
+<math.h>
+#define v=10
+
+#define is a macro
+v=10
+int main()
+int main()
+{
+{
+printf("%d",v);
+printf("%d",v);
+}
+}
+header files:2,macro:1
