@@ -19,3 +19,19 @@ int main() {
    printf("Lines: %d, Words: %d, Characters: %d\n", lines, words, chars);
    return 0;
 }
+
+===========================================================================================
+
+output:
+
+C:\Users\JAHNAVI BANKURU>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\JAHNAVI BANKURU>flex countchar.l.txt
+
+C:\Users\JAHNAVI BANKURU>set path=C:\MinGW\bin
+
+C:\Users\JAHNAVI BANKURU>gcc lex.yy.c
+
+C:\Users\JAHNAVI BANKURU>a
+im an angel
+Lines: 1, Words: 3, Characters: 6
