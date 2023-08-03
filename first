@@ -21,6 +21,24 @@ int check(char a[100])
 		printf("%c",a[ind+1]);
 	}
 	return 0;
+
+========================================================================
+output:
+
+Input:
+E  -> TR
+R  -> +T R| #
+T  -> F Y
+Y  -> *F Y | #
+F  -> (E) | i
+
+
+Output :
+First(E)= { (, i, }
+First(R)= { +, #, }
+First(T)= { (, i, }
+First(Y)= { *, #, }
+First(F)= { (, i, }
 }
 int main()
 {
