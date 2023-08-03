@@ -18,3 +18,19 @@ int main(void) {
    printf("Character 'a' is repeated %d times\n", count);
    return 0;
 }
+
+================================================================
+output:
+
+C:\Users\JAHNAVI BANKURU>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\JAHNAVI BANKURU>flex countchar.l.txt
+
+C:\Users\JAHNAVI BANKURU>set path=C:\MinGW\bin
+
+C:\Users\JAHNAVI BANKURU>gcc lex.cc.y
+
+C:\Users\JAHNAVI BANKURU>a
+
+jaaaanu
+character 'a' is repeated 4 times
