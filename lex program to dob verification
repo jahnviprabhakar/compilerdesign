@@ -1,0 +1,42 @@
+%{
+#include <stdio.h>
+#include <stdlib.h>
+%}
+
+%option noyywrap
+
+%%
+%%
+[0-9]{2}/[0-9]{2}/[0-9]{4}   {
+                                int day, month, year;
+                                sscanf(yytext, "%d/%d/%d", &day, &month, &year);
+                                if (month >= 1 && month <= 12 && day >= 1 && day <= 31) {
+                                    // You can add more complex validation here if needed.
+                                    printf("Valid date of birth: %s\n", yytext);
+                                } else {
+                                    printf("Invalid date of birth: %s\n", yytext);
+                                }
+                            }
+\n                          ; // Ignore newlines
+.                           ; // Ignore any other characters
+
+%%
+
+int main(int argc, char* argv[]) {
+    if (argc != 2) {
+        printf("Usage: %s input_file\n", argv[0]);
+        return 1;
+    }
+
+    FILE* file = fopen(argv[1], "r");
+    if (!file) {
+        perror("Error opening file");
+        return 1;
+    }
+
+    yyin = file;
+    yylex();
+    fclose(file);
+
+    return 0;
+}
