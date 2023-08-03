@@ -40,3 +40,22 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
+
+=================================================================
+output:
+C:\Users\JAHNAVI BANKURU>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\JAHNAVI BANKURU>flex dob.l.txt
+
+C:\Users\JAHNAVI BANKURU>set path=C:\MinGW\bin
+
+C:\Users\JAHNAVI BANKURU>gcc lex.yy.c
+
+C:\Users\JAHNAVI BANKURU>a
+
+28-11-2004
+
+valid date of birth
+==================================================================
+33-33-3333
+invalid date of birth
