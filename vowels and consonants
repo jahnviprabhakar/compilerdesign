@@ -39,3 +39,9 @@ int main() {
     fclose(file);
     return 0;
 }
+
+=======================================================================
+output:
+Enter the filename: backendcompiler.c
+File not found.
+
