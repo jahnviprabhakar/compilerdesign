@@ -1,0 +1,48 @@
+%{
+#include <stdio.h>
+%}
+
+%%
+
+[a-zA-Z]+    {
+    printf("Word: %s\n", yytext);
+}
+
+[0-9]+    {
+    printf("Number: %s\n", yytext);
+}
+
+[^a-zA-Z0-9 \n\t]+    {
+    printf("Special character: %s\n", yytext);
+}
+
+[ \n\t]+   {/* Ignore whitespaces, newlines, and tabs */}
+
+%%
+
+int main(void) {
+    yylex();
+    return 0;
+}
+
+int yywrap(void) {
+    return 1;
+}
+=======================================================================
+OUTPUT:
+
+C:\Users\JAHNAVI BANKURU>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\JAHNVAI BANKURU>flex seperate.l.txt
+
+C:\Users\JAHNVAI BANKURU>set path=C:\MinGW\bin
+
+C:\Users\JAHNAVI BANKURU>gcc lex.yy.c
+
+C:\Users\JAHNAVI BANKURU>a
+co4$#
+c:word
+o:word
+4:number
+#:special character
+$:special character
