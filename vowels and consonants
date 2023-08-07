@@ -42,6 +42,7 @@ int main() {
 
 =======================================================================
 output:
-Enter the filename: backendcompiler.c
-File not found.
-
+i am a good girl.
+word count: 5
+char count=12
+line count=1
